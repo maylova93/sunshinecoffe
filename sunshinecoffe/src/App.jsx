@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { Layout } from "./layout/Layout.jsx";
+import { Layout } from "./layout/Layout";
 import { AllProducts } from "./pages/AllProducts";
 import { Home } from "./pages/home/home"; 
 import { SignInPage } from "./pages/SignInPage";
@@ -13,11 +14,13 @@ import { Checkout } from './components/ProductCard/Checkout';
 const queryClient = new QueryClient();
 
 function App() {
+  const [cart, setCart] = useState([]); 
+
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layout cart={cart} setCart={setCart} />}> 
             <Route index element={<Home />} />
             <Route path="/products" element={<AllProducts />} />
             <Route path="/signin" element={<SignInPage />} />
