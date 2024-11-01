@@ -1,0 +1,17 @@
+$light-gray: #1E1E1E;
+$off-white: #EFEFEF;
+$black: #111111;
+$dark-brown: #4F2919;
+$medium-brown: #B46538;
+$light-brown: #7A4C20;
+
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Inika:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inika';
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Licorice', cursive;
+  }
+  

@@ -1,0 +1,22 @@
+@import '../style/mixins.scss';
+
+.policyContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Inika', serif;
+    color: $black;
+
+    h2 {
+        font-size: 2.5rem;
+        color: $dark-brown;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: $light-gray;
+        margin-bottom: 1rem;
+    }
+}

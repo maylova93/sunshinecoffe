@@ -1,0 +1,107 @@
+@import '../style/mixins';
+.signInContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+  
+    text-align: center;
+    box-sizing: border-box;
+    
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-family: 'Licorice', cursive;
+    color: #000;
+    margin-bottom: 2rem;
+  }
+  
+  .inputGroup {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    
+    label {
+      display: block;
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+    
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #333;
+      border-radius: 4px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+  
+    .signUpButton, .submitButton {
+      padding: 0.5rem 1.5rem;
+      font-size: 0.9rem;
+      border-radius: 4px;
+      border: 1px solid #333;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 45%;
+      max-width: 180px;
+    }
+  
+    .signUpButton {
+      background-color: #fff;
+      color: #333;
+      &:hover {
+        background-color: #f5f5f5;
+      }
+    }
+  
+    .submitButton {
+      background-color: #333;
+      color: #fff;
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+  
+  .successMessage {
+    font-size: 1.2rem;
+    color: green;
+    margin-top: 2rem;
+  }
+  
+  .backToHomeButton {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    &:hover {
+      background-color: #555;
+    }
+  }
+  .footerLine {
+    width: 100%;
+    height: 10px;
+    background-color: $black; 
+    margin-top: 4rem;
+  }

@@ -1,0 +1,91 @@
+@import '../../style/mixins';
+
+.infoSection {
+    display: flex;
+    justify-content: space-between;
+    background-color: $off-white;
+    padding: 1rem;
+    gap: 1rem;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        text-align: center;
+        padding: 2rem;
+        background-color: $off-white;
+        border-radius: 8px;
+        box-sizing: border-box;
+
+        h6 {
+            font-size: 4rem; 
+            font-family: 'Licorice', cursive;
+            font-weight: 400;
+            line-height: 80px;
+            color: $black;
+            margin-bottom: 1rem; 
+        }
+
+        p {
+            font-size: 1rem;
+            font-family: 'Inika';
+            color:$black;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            text-align: center; 
+            max-width: 80%; 
+        }
+
+        img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem; 
+        }
+    }
+
+    /* Responsiv styling for tablet og mobil */
+    @media (max-width: 768px) {
+        flex-direction: column; 
+        padding: 2rem;
+        gap: 1.5rem;
+
+        .card {
+            h2 {
+                font-size: 1.8rem; 
+            }
+
+            p {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+
+            img {
+                height: 200px; 
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 1.5rem;
+        gap: 1rem;
+
+        .card {
+            h2 {
+                font-size: 1.5rem; 
+            }
+
+            p {
+                font-size: 0.8rem;
+                line-height: 1.3;
+            }
+
+            img {
+                height: 180px; 
+            }
+        }
+    }
+}
